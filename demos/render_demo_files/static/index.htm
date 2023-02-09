@@ -94,21 +94,15 @@
     // Draw circles using the Positions we just made
     map.selectAll("circle").data(trees)
        .join("circle")
-       .attr("r", 1)
+       .attr("r", 2)
        .attr("fill", "forestgreen")
        .attr("opacity", 0.4)
        .attr("cx", d => d.Position[0])
        .attr("cy", d => d.Position[1]);
     
-    
-    
+  
   }
   requestData();
-  
-  
-  
-
-
 
 
   </script>
